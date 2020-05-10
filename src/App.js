@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to JB Bio Medical Showcase!
+          Welcome to JB Bio Medical Equipments Showcase!
         </p>
         <a
           className="App-link"
