@@ -1,5 +1,6 @@
 import React from 'react';
 import { Product } from './product';
+import { ProductService } from './products.service'
 import { Card, Button } from 'react-bootstrap';
 
 
@@ -9,10 +10,10 @@ class ProductsComponent extends React.Component {
     constructor() {
         super();
         this.products = [];
+        this.products = ProductService.getProducts();
     }
 
     render() {
-        this.dummydata();
         let cards = [];
         this.products.forEach(product => {
             cards.push(this.getCard(product));
@@ -38,12 +39,6 @@ class ProductsComponent extends React.Component {
                 </Card.Body>
             </Card>
         )
-    }
-
-    dummydata() {
-        for (let index = 0; index < 10; index++) {
-            this.products.push(new Product("Name" + index, "url", "some desc"));
-        }
     }
 }
 
