@@ -15,7 +15,7 @@ import ProductsComponent from './products/products.component'
 const routing = (
   <HashRouter basename="/">
     <div>
-      <Route path="/" component={HomeComponent} />
+      <Route extact path="/" component={HomeComponent} />
       <Route path="/products" component={ProductsComponent} />
       <Route path="/contact" component={ContactUsComponent} />
     </div>
