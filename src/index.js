@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+//Routing
+import ContactUsComponent from './contact-us/contact.us.component'
+import HomeComponent from './home/home.component'
+import ProductsComponent from './products/products.component'
+
+
+const routing = (
+  <Router>
+    <div>
+      <Route exact path="/" component={HomeComponent} />
+      <Route path="/products" component={ProductsComponent} />
+      <Route path="/contact" component={ContactUsComponent} />
+    </div>
+  </Router>
+)
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  routing,
   document.getElementById('root')
 );
 

@@ -71,3 +71,5 @@ git checkout gh-pages
 git merge master
 npm run build
 npm run deploy
+
+https://app.pluralsight.com/guides/how-to-create-react-application-and-deploy-on-github-pages
