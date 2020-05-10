@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router, HashRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -13,13 +13,13 @@ import ProductsComponent from './products/products.component'
 
 
 const routing = (
-  <Router basename={process.env.PUBLIC_URL}>
+  <HashRouter basename="/">
     <div>
       <Route path="/" component={HomeComponent} />
       <Route path="/products" component={ProductsComponent} />
       <Route path="/contact" component={ContactUsComponent} />
     </div>
-  </Router>
+  </HashRouter>
 )
 
 ReactDOM.render(
