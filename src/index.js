@@ -13,9 +13,9 @@ import ProductsComponent from './products/products.component'
 
 
 const routing = (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
-      <Route exact path="/" component={HomeComponent} />
+      <Route path="/" component={HomeComponent} />
       <Route path="/products" component={ProductsComponent} />
       <Route path="/contact" component={ContactUsComponent} />
     </div>
