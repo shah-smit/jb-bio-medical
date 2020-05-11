@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router, HashRouter } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router, HashRouter, Switch } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -15,9 +15,12 @@ import ProductsComponent from './products/products.component'
 const routing = (
   <HashRouter basename="/">
     <div>
-      <Route extact path="/home" component={HomeComponent} />
-      <Route path="/products" component={ProductsComponent} />
-      <Route path="/contact" component={ContactUsComponent} />
+      <Switch>
+        <Route extact path="/" component={HomeComponent} />
+        <Route path="/home" component={HomeComponent} />
+        <Route path="/products" component={ProductsComponent} />
+        <Route path="/contact" component={ContactUsComponent} />
+      </Switch>
     </div>
   </HashRouter>
 )
