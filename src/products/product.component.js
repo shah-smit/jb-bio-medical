@@ -3,6 +3,7 @@ import { Product } from './product';
 import { ProductService } from './products.service'
 import { Col, Row, Container, Image } from 'react-bootstrap';
 import { Document, Page } from 'react-pdf';
+import './product.css';
 
 class ProductComponent extends React.Component {
 
@@ -22,12 +23,17 @@ class ProductComponent extends React.Component {
 
     render() {
         return (
-            <div>
-                <Image src={process.env.PUBLIC_URL + this.product.ImageUrl} height="100" width="150" thumbnail /><br />
-                <span>Id: {this.productId}</span><br />
-                <span>Name: {this.product.Name}</span><br />
-                <span>Description: {this.product.Description}</span><br />
-                <a href={process.env.PUBLIC_URL + this.product.PdfUrl}>test</a>
+            <div className="product">
+                <div className="product-left-div">
+                    <Image src={process.env.PUBLIC_URL + this.product.ImageUrl} height="100" width="150" thumbnail /><br />
+                </div>
+                <div className="product-right-div">
+                    <h3>{this.product.Name}</h3><br />
+                    <span className="description">{this.product.Description}</span><br />
+                    <br/>
+                    <a href={process.env.PUBLIC_URL + this.product.PdfUrl}>pdf version</a>
+                </div>
+                <br /><br />
             </div>);
     }
 }
