@@ -2,7 +2,7 @@ git checkout gh-pages
 
 git merge master
 
-mvn build && mvn deploy
+npm run build && npm run deploy
 
 sleep 10
 
