@@ -3,7 +3,6 @@ import { Product } from './product';
 import { ProductService } from './products.service'
 import { Card, Button } from 'react-bootstrap';
 
-
 class ProductsComponent extends React.Component {
     products: Product[];
 
@@ -28,12 +27,11 @@ class ProductsComponent extends React.Component {
     getCard(product) {
         return (
             <Card style={{ width: '18rem', display: "inline-block" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + product.ImageUrl} height="100" width="150" />
                 <Card.Body>
                     <Card.Title>{product.Name}</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        {product.Description}
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>

@@ -1,4 +1,5 @@
 import { Product } from './product';
+import products from './products.json';
 
 export class ProductService{
     constructor(){
@@ -6,10 +7,6 @@ export class ProductService{
     }
 
     static getProducts(){
-        let products = []
-        for (let index = 0; index < 10; index++) {
-            products.push(new Product("Name" + index, "url", "some desc"));
-        }
         return products;
     }
 }

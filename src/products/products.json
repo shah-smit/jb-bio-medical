@@ -1,0 +1,32 @@
+[
+    {
+        "Name":"Product 1",
+        "ImageUrl":"/images/dummy.png",
+        "Description":"Product 1 Description"
+    },
+    {
+        "Name":"Product 2",
+        "ImageUrl":"/images/dummy.png",
+        "Description":"Product 2 Description"
+    },
+    {
+        "Name":"Product 3",
+        "ImageUrl":"/images/dummy.png",
+        "Description":"Product 3 Description"
+    },
+    {
+        "Name":"Product 4",
+        "ImageUrl":"/images/dummy.png",
+        "Description":"Product 4 Description"
+    },
+    {
+        "Name":"Product 5",
+        "ImageUrl":"/images/dummy.png",
+        "Description":"Product 5 Description"
+    },
+    {
+        "Name":"Product 6",
+        "ImageUrl":"/images/dummy.png",
+        "Description":"Product 6 Description"
+    }
+]
