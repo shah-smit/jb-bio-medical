@@ -3,36 +3,42 @@
         "Id": 1,
         "Name":"Product 1",
         "ImageUrl":"/images/dummy.png",
+        "PdfUrl":"/pdf/dummy.pdf",
         "Description":"Product 1 Description"
     },
     {
         "Id": 2,
         "Name":"Product 2",
         "ImageUrl":"/images/dummy.png",
+        "PdfUrl":"/pdf/dummy.pdf",
         "Description":"Product 2 Description"
     },
     {
         "Id": 3,
         "Name":"Product 3",
         "ImageUrl":"/images/dummy.png",
+        "PdfUrl":"/pdf/dummy.pdf",
         "Description":"Product 3 Description"
     },
     {
         "Id": 4,
         "Name":"Product 4",
         "ImageUrl":"/images/dummy.png",
+        "PdfUrl":"/pdf/dummy.pdf",
         "Description":"Product 4 Description"
     },
     {
         "Id": 5,
         "Name":"Product 5",
         "ImageUrl":"/images/dummy.png",
+        "PdfUrl":"/pdf/dummy.pdf",
         "Description":"Product 5 Description"
     },
     {
         "Id": 6,
         "Name":"Product 6",
         "ImageUrl":"/images/dummy.png",
+        "PdfUrl":"/pdf/dummy.pdf",
         "Description":"Product 6 Description"
     }
 ]
