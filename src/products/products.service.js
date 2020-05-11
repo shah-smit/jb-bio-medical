@@ -9,4 +9,8 @@ export class ProductService{
     static getProducts(){
         return products;
     }
+
+    static getProductById(id): Product{
+        return products.filter(el => el.Id == id).pop();
+    }
 }

@@ -10,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 import ContactUsComponent from './contact-us/contact.us.component'
 import HomeComponent from './home/home.component'
 import ProductsComponent from './products/products.component'
+import ProductComponent from './products/product.component'
 
 
 const routing = (
@@ -17,6 +18,7 @@ const routing = (
     <div>
       <Route path="/home" component={HomeComponent} />
       <Route path="/products" component={ProductsComponent} />
+      <Route path="/product/:id" component={ProductComponent} />
       <Route path="/contact" component={ContactUsComponent} />
     </div>
   </HashRouter>

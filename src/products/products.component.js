@@ -2,6 +2,7 @@ import React from 'react';
 import { Product } from './product';
 import { ProductService } from './products.service'
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 class ProductsComponent extends React.Component {
     products: Product[];
@@ -33,7 +34,9 @@ class ProductsComponent extends React.Component {
                     <Card.Text>
                         {product.Description}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Link to={"/product/"+product.Id}>
+                        <Button variant="primary" href={"/product/"+product.Id}>Go somewhere</Button>
+                    </Link>
                 </Card.Body>
             </Card>
         )
