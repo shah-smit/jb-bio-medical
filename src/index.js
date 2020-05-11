@@ -15,12 +15,9 @@ import ProductsComponent from './products/products.component'
 const routing = (
   <HashRouter basename="/">
     <div>
-      <Switch>
-        <Route extact path="/" component={HomeComponent} />
-        <Route path="/home" component={HomeComponent} />
-        <Route path="/products" component={ProductsComponent} />
-        <Route path="/contact" component={ContactUsComponent} />
-      </Switch>
+      <Route path="/home" component={HomeComponent} />
+      <Route path="/products" component={ProductsComponent} />
+      <Route path="/contact" component={ContactUsComponent} />
     </div>
   </HashRouter>
 )
