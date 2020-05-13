@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router, HashRouter, Switch } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-
-// import Nav from './Nav';
 import * as serviceWorker from './serviceWorker';
-
 
 //Routing
 import ContactUsComponent from './contact-us/contact.us.component'
@@ -18,7 +15,6 @@ import ProductComponent from './products/product.component'
 const routing = (
   <HashRouter basename="/">
     <div>
-      {/* <Nav/> */}
       <Route path="/home" component={HomeComponent} />
       <Route path="/products" component={ProductsComponent} />
       <Route path="/product/:id" component={ProductComponent} />

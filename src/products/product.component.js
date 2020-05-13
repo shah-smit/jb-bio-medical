@@ -3,6 +3,7 @@ import { Product } from './product';
 import { ProductService } from './products.service'
 import { Col, Row, Container, Image } from 'react-bootstrap';
 import './product.css';
+import CustomNavbar from '../helper/Nav'
 
 class ProductComponent extends React.Component {
 
@@ -22,6 +23,8 @@ class ProductComponent extends React.Component {
 
     render() {
         return (
+            <>
+            <CustomNavbar currentPage="products"/>
             <div className="product">
                 <div className="product-left-div">
                     <Image src={process.env.PUBLIC_URL + this.product.ImageUrl} height="100" width="150" thumbnail /><br />
@@ -33,7 +36,8 @@ class ProductComponent extends React.Component {
                     <a href={process.env.PUBLIC_URL + this.product.PdfUrl}>pdf version</a>
                 </div>
                 <br /><br />
-            </div>);
+            </div>
+            </>);
     }
 }
 

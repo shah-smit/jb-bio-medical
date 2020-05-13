@@ -3,9 +3,13 @@ import logo from '../logo.svg';
 import '../App.css';
 import { Link } from 'react-router-dom'
 
+import CustomNavbar from '../helper/Nav'
+
 class HomeComponent extends React.Component {
     render() {
         return (
+            <>
+            <CustomNavbar currentPage="products"/>
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
@@ -16,6 +20,7 @@ class HomeComponent extends React.Component {
                     <Link to="/contact">Contact Us</Link>
                 </header>
             </div>
+            </>
         );
     }
 }

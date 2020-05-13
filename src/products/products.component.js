@@ -1,8 +1,11 @@
 import React from 'react';
+import { Card, Button, Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
+
 import { Product } from './product';
 import { ProductService } from './products.service'
-import { Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import CustomNavbar from '../helper/Nav'
+
 import './products.css'
 
 class ProductsComponent extends React.Component {
@@ -21,7 +24,7 @@ class ProductsComponent extends React.Component {
         })
         return (
             <div>
-                <h1>Hello, Products Component</h1>
+                <CustomNavbar currentPage="products"/>
                 {cards}
             </div>);
     }
@@ -36,7 +39,7 @@ class ProductsComponent extends React.Component {
                         {product.Description}
                     </Card.Text>
                     <Link to={"/product/"+product.Id}>
-                        <Button variant="primary" href={"/product/"+product.Id}>Go somewhere</Button>
+                        <Button variant="primary" >Enquire Now</Button>
                     </Link>
                 </Card.Body>
             </Card>
