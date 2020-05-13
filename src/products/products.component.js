@@ -3,6 +3,7 @@ import { Product } from './product';
 import { ProductService } from './products.service'
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import './products.css'
 
 class ProductsComponent extends React.Component {
     products: Product[];
@@ -28,7 +29,7 @@ class ProductsComponent extends React.Component {
     getCard(product) {
         return (
             <Card style={{ width: '18rem', display: "inline-block" }}>
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + product.ImageUrl} height="100" width="150" />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + product.ImageUrl} />
                 <Card.Body>
                     <Card.Title>{product.Name}</Card.Title>
                     <Card.Text>

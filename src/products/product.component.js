@@ -2,7 +2,6 @@ import React from 'react';
 import { Product } from './product';
 import { ProductService } from './products.service'
 import { Col, Row, Container, Image } from 'react-bootstrap';
-import { Document, Page } from 'react-pdf';
 import './product.css';
 
 class ProductComponent extends React.Component {

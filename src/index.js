@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router, HashRouter, Switch } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
+
+// import Nav from './Nav';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -16,6 +18,7 @@ import ProductComponent from './products/product.component'
 const routing = (
   <HashRouter basename="/">
     <div>
+      {/* <Nav/> */}
       <Route path="/home" component={HomeComponent} />
       <Route path="/products" component={ProductsComponent} />
       <Route path="/product/:id" component={ProductComponent} />
