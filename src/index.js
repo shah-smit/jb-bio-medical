@@ -21,6 +21,7 @@ const routing = (
       <Route path="/product/:id" component={ProductComponent} />
       <Route path="/contact" component={ContactUsComponent} />
     </div>
+    <footer>v1.1</footer>
   </HashRouter>
 )
 
