@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomNavbar from '../helper/Nav'
 import { Card, Form, Col, Button } from 'react-bootstrap';
-import {NotificationContainer, NotificationManager} from 'react-notifications';
+import { NotificationContainer, NotificationManager } from 'react-notifications';
 
 import './contact.us.css'
 
@@ -47,23 +47,23 @@ class ContactUsComponent extends React.Component {
                 },
                 body: JSON.stringify(obj)
             })
-            .then((res) => {
-                //To many requests
-                if(res.status == 429){
-                    this.sendWarningNotifs("Error in submiting contact form.", 180000)
-                }
-            })
-            .catch((err) => {
-                console.log(err);
-                this.sendWarningNotifs("Something went wrong!", 3000)
-            })
+                .then((res) => {
+                    //To many requests
+                    if (res.status == 429) {
+                        this.sendWarningNotifs("Error in submiting contact form.", 180000)
+                    }
+                })
+                .catch((err) => {
+                    console.log(err);
+                    this.sendWarningNotifs("Something went wrong!", 3000)
+                })
         }
     }
 
     validateFields(obj) {
         //Assuming ProductName and Category can be empty
         if (obj === null || obj === undefined || obj.timestamp === "" || obj.user_name === "" || obj.user_email === "" || obj.user_phone === "" || obj.message === "") {
-            this.sendWarningNotifs("All fileds must be filled!",3000)
+            this.sendWarningNotifs("All fileds must be filled!", 3000)
             return false;
         }
 
@@ -115,15 +115,35 @@ class ContactUsComponent extends React.Component {
         this.setState({ message: e.target.value });
     }
 
-    sendWarningNotifs(message, mil){
-        NotificationManager.warning(message, `Close after ${mil}ms`, mil);
+    sendWarningNotifs(message, milliseconds) {
+        this.createNotification("warning", message, null, milliseconds);
+    }
+
+    createNotification(type, message, submessage, milliseconds) {
+        submessage = submessage == null ? `Close after ${milliseconds}ms` : submessage;
+        switch (type) {
+            case 'info':
+                NotificationManager.info(message);
+                break;
+            case 'success':
+                NotificationManager.success(submessage, message);
+                break;
+            case 'warning':
+                NotificationManager.warning(submessage, message, milliseconds);
+                break;
+            case 'error':
+                NotificationManager.error('Error message', 'Click me!', 5000, () => {
+                    alert('callback');
+                });
+                break;
+        }
     }
 
     render() {
         return (
             <>
                 <CustomNavbar currentPage="products" />
-                <NotificationContainer/>
+                <NotificationContainer />
                 <Card>
                     <Card.Body>
                         <Form>
