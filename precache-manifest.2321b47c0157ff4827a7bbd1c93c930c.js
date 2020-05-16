@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f63a276be77994e206605cd59b1f9f4",
+    "revision": "8f5ba6223f69fc7239e914d964ee3d72",
     "url": "/jb-bio-medical/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jb-bio-medical/static/css/2.2262eadd.chunk.css"
   },
   {
-    "revision": "9573521cf5459357fbf5",
+    "revision": "f7c9362aefb6c5ad0c64",
     "url": "/jb-bio-medical/static/css/main.b76d11eb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jb-bio-medical/static/js/2.d73723de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9573521cf5459357fbf5",
-    "url": "/jb-bio-medical/static/js/main.562d8688.chunk.js"
+    "revision": "f7c9362aefb6c5ad0c64",
+    "url": "/jb-bio-medical/static/js/main.8586fdae.chunk.js"
   },
   {
     "revision": "f94934c57abbadb2c6dc",
