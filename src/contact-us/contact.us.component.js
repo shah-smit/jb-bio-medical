@@ -126,7 +126,7 @@ class ContactUsComponent extends React.Component {
                 <NotificationContainer/>
                 <Card>
                     <Card.Body>
-                        <Form onSubmit={this.handleSubmit}>
+                        <Form>
                             <Form.Row>
                                 <Form.Group as={Col}>
                                     <Form.Label>Product Name</Form.Label>
