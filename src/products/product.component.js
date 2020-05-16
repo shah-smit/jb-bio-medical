@@ -1,7 +1,7 @@
 import React from 'react';
 import { Product } from './product';
 import { ProductService } from './products.service'
-import { Col, Row, Container, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import './product.css';
 import CustomNavbar from '../helper/Nav'
 

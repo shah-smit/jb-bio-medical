@@ -29,15 +29,48 @@ class ContactUsComponent extends React.Component {
 
     handleSubmit(event) {
         var obj = this.state;
-        fetch('/sendmail', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-            },
-            body: JSON.stringify(obj)
-        })
+        obj.timestamp = this.getCurrentDateTime();
+        if(this.validateFields(obj)){
+            fetch('/sendmail', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                body: JSON.stringify(obj)
+            })
+        }
+    }
+
+    validateFields(obj){
+        //Assuming ProductName and Category can be empty
+        if(obj === null || obj === undefined || obj.timestamp === "" || obj.user_name === "" || obj.user_email === "" || obj.user_phone === "" || obj.message === ""){
+            return false;
+        }
+
+        return true;
+    }
+
+    getCurrentDateTime() {
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var d = new Date();
+        var day = days[d.getDay()];
+        var hr = d.getHours();
+        var min = d.getMinutes();
+        if (min < 10) {
+            min = "0" + min;
+        }
+        var ampm = "am";
+        if (hr > 12) {
+            hr -= 12;
+            ampm = "pm";
+        }
+        var date = d.getDate();
+        var month = months[d.getMonth()];
+        var year = d.getFullYear();
+        return day + " " + hr + ":" + min + ampm + " " + date + " " + month + " " + year;
     }
 
     handleProductName(e) {
