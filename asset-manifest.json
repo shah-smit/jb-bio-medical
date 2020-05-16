@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/jb-bio-medical/static/css/main.b76d11eb.chunk.css",
-    "main.js": "/jb-bio-medical/static/js/main.64e6b54e.chunk.js",
-    "main.js.map": "/jb-bio-medical/static/js/main.64e6b54e.chunk.js.map",
+    "main.js": "/jb-bio-medical/static/js/main.b9c1706c.chunk.js",
+    "main.js.map": "/jb-bio-medical/static/js/main.b9c1706c.chunk.js.map",
     "runtime-main.js": "/jb-bio-medical/static/js/runtime-main.2e44508f.js",
     "runtime-main.js.map": "/jb-bio-medical/static/js/runtime-main.2e44508f.js.map",
     "static/css/2.2262eadd.chunk.css": "/jb-bio-medical/static/css/2.2262eadd.chunk.css",
-    "static/js/2.d73723de.chunk.js": "/jb-bio-medical/static/js/2.d73723de.chunk.js",
-    "static/js/2.d73723de.chunk.js.map": "/jb-bio-medical/static/js/2.d73723de.chunk.js.map",
+    "static/js/2.502177e2.chunk.js": "/jb-bio-medical/static/js/2.502177e2.chunk.js",
+    "static/js/2.502177e2.chunk.js.map": "/jb-bio-medical/static/js/2.502177e2.chunk.js.map",
     "index.html": "/jb-bio-medical/index.html",
-    "precache-manifest.40bfa2097eb4752383be91e3cfb8ccf7.js": "/jb-bio-medical/precache-manifest.40bfa2097eb4752383be91e3cfb8ccf7.js",
+    "precache-manifest.d0c86ddfc8274648e0c6ab07373d6958.js": "/jb-bio-medical/precache-manifest.d0c86ddfc8274648e0c6ab07373d6958.js",
     "service-worker.js": "/jb-bio-medical/service-worker.js",
     "static/css/2.2262eadd.chunk.css.map": "/jb-bio-medical/static/css/2.2262eadd.chunk.css.map",
     "static/css/main.b76d11eb.chunk.css.map": "/jb-bio-medical/static/css/main.b76d11eb.chunk.css.map",
-    "static/js/2.d73723de.chunk.js.LICENSE.txt": "/jb-bio-medical/static/js/2.d73723de.chunk.js.LICENSE.txt",
+    "static/js/2.502177e2.chunk.js.LICENSE.txt": "/jb-bio-medical/static/js/2.502177e2.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/jb-bio-medical/static/media/logo.5d5d9eef.svg",
     "static/media/notifications.css": "/jb-bio-medical/static/media/notification.c0d3c94c.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.2e44508f.js",
     "static/css/2.2262eadd.chunk.css",
-    "static/js/2.d73723de.chunk.js",
+    "static/js/2.502177e2.chunk.js",
     "static/css/main.b76d11eb.chunk.css",
-    "static/js/main.64e6b54e.chunk.js"
+    "static/js/main.b9c1706c.chunk.js"
   ]
 }
