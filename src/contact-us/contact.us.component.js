@@ -1,8 +1,7 @@
 import React from 'react';
 import CustomNavbar from '../helper/Nav'
 import { Card, Form, Col, Button } from 'react-bootstrap';
-import ReCAPTCHA from "react-recaptcha";
-
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 import './contact.us.css'
 
@@ -48,12 +47,20 @@ class ContactUsComponent extends React.Component {
                 },
                 body: JSON.stringify(obj)
             })
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err);
+                this.sendWarningNotifs("Error in submiting contact form.", 180000)
+            })
         }
     }
 
     validateFields(obj) {
         //Assuming ProductName and Category can be empty
         if (obj === null || obj === undefined || obj.timestamp === "" || obj.user_name === "" || obj.user_email === "" || obj.user_phone === "" || obj.message === "") {
+            this.sendWarningNotifs("All fileds must be filled!",3000)
             return false;
         }
 
@@ -105,10 +112,15 @@ class ContactUsComponent extends React.Component {
         this.setState({ message: e.target.value });
     }
 
+    sendWarningNotifs(message, mil){
+        NotificationManager.warning(message, `Close after ${mil}ms`, mil);
+    }
+
     render() {
         return (
             <>
                 <CustomNavbar currentPage="products" />
+                <NotificationContainer/>
                 <Card>
                     <Card.Body>
                         <Form onSubmit={this.handleSubmit}>
@@ -143,11 +155,6 @@ class ContactUsComponent extends React.Component {
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control as="textarea" rows="3" value={this.state.message} onChange={this.handleMessage} />
                             </Form.Group>
-
-                            <ReCAPTCHA
-                                sitekey="6LdWD_gUAAAAAHMewbMRYIy9PHNxVo1f7CI9U1bw"
-                                onChange={this.onChangeCaptcha}
-                            />
 
                             <Button variant="primary" type="submit" onClick={this.handleSubmit}>
                                 Submit
