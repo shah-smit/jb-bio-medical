@@ -48,11 +48,14 @@ class ContactUsComponent extends React.Component {
                 body: JSON.stringify(obj)
             })
             .then((res) => {
-                console.log(res);
+                //To many requests
+                if(res.status == 429){
+                    this.sendWarningNotifs("Error in submiting contact form.", 180000)
+                }
             })
             .catch((err) => {
                 console.log(err);
-                this.sendWarningNotifs("Error in submiting contact form.", 180000)
+                this.sendWarningNotifs("Something went wrong!", 3000)
             })
         }
     }
