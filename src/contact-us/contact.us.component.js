@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomNavbar from '../helper/Nav'
 import { Card, Form, Col, Button } from 'react-bootstrap';
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-recaptcha";
 
 
 import './contact.us.css'
