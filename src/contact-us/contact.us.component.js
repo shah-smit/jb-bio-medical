@@ -1,6 +1,8 @@
 import React from 'react';
 import CustomNavbar from '../helper/Nav'
 import { Card, Form, Col, Button } from 'react-bootstrap';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 import './contact.us.css'
 
@@ -16,6 +18,8 @@ class ContactUsComponent extends React.Component {
         this.handleUserPhone = this.handleUserPhone.bind(this);
         this.handleUserName = this.handleUserName.bind(this);
 
+        this.onChangeCaptcha = this.onChangeCaptcha.bind(this);
+
         this.state = {
             timestamp: "",
             user_name: "",
@@ -27,10 +31,14 @@ class ContactUsComponent extends React.Component {
         }
     }
 
+    onChangeCaptcha(value) {
+        console.log("Captcha value:", value);
+    }
+
     handleSubmit(event) {
         var obj = this.state;
         obj.timestamp = this.getCurrentDateTime();
-        if(this.validateFields(obj)){
+        if (this.validateFields(obj)) {
             fetch('/sendmail', {
                 method: 'POST',
                 headers: {
@@ -43,9 +51,9 @@ class ContactUsComponent extends React.Component {
         }
     }
 
-    validateFields(obj){
+    validateFields(obj) {
         //Assuming ProductName and Category can be empty
-        if(obj === null || obj === undefined || obj.timestamp === "" || obj.user_name === "" || obj.user_email === "" || obj.user_phone === "" || obj.message === ""){
+        if (obj === null || obj === undefined || obj.timestamp === "" || obj.user_name === "" || obj.user_email === "" || obj.user_phone === "" || obj.message === "") {
             return false;
         }
 
@@ -135,6 +143,11 @@ class ContactUsComponent extends React.Component {
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control as="textarea" rows="3" value={this.state.message} onChange={this.handleMessage} />
                             </Form.Group>
+
+                            <ReCAPTCHA
+                                sitekey="6LdWD_gUAAAAAHMewbMRYIy9PHNxVo1f7CI9U1bw"
+                                onChange={this.onChangeCaptcha}
+                            />
 
                             <Button variant="primary" type="submit" onClick={this.handleSubmit}>
                                 Submit
