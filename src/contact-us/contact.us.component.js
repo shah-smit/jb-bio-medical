@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomNavbar from '../helper/Nav'
-import { Card, Form, Col, Button } from 'react-bootstrap';
+import { Card, Form, Col, Button, Alert } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { NotificationContainer, NotificationManager } from 'react-notifications';
 
 import './contact.us.css'
@@ -21,27 +22,27 @@ class ContactUsComponent extends React.Component {
         console.log(props);
         var product_name = "";
         console.log(props.match.params.product_name)
-        if(props.match.params.product_name){
+        if (props.match.params.product_name) {
             product_name = props.match.params.product_name
         }
-        
+
         var product_category = "";
         console.log(props.match.params.product_category)
-        if(props.match.params.product_category){
+        if (props.match.params.product_category) {
             product_category = props.match.params.product_category
         }
 
         var foundParams = false;
-        if(product_category == ""  || product_name == ""){
+        if (product_category == "" || product_name == "") {
             product_category = "";
             product_name = "";
         } else {
             foundParams = true;
         }
-        
+
         console.log(product_category);
         console.log(product_name);
-        
+
         this.state = {
             timestamp: "",
             user_name: "",
@@ -50,7 +51,8 @@ class ContactUsComponent extends React.Component {
             message: "",
             product_name: product_name,
             product_category: product_category,
-            disable_product_fields: foundParams
+            disable_product_fields: foundParams,
+            formSubmitted: false
         }
     }
 
@@ -75,6 +77,8 @@ class ContactUsComponent extends React.Component {
                     //To many requests
                     if (res.status == 429) {
                         this.sendWarningNotifs("Error in submiting contact form.", 180000)
+                    } else {
+                        this.setState({ formSubmitted: true })
                     }
                 })
                 .catch((err) => {
@@ -164,7 +168,10 @@ class ContactUsComponent extends React.Component {
     }
 
     render() {
-        return (
+        if (this.state.formSubmitted) {
+            return this.renderSubmission();
+        }
+        else return (
             <>
                 <CustomNavbar currentPage="products" />
                 <NotificationContainer />
@@ -174,12 +181,12 @@ class ContactUsComponent extends React.Component {
                             <Form.Row>
                                 <Form.Group as={Col}>
                                     <Form.Label>Product Name</Form.Label>
-                                    <Form.Control type="text" value={this.state.product_name} onChange={this.handleProductName} placeholder="product name" disabled={this.state.disable_product_fields}/>
+                                    <Form.Control type="text" value={this.state.product_name} onChange={this.handleProductName} placeholder="product name" disabled={this.state.disable_product_fields} />
                                 </Form.Group>
 
                                 <Form.Group as={Col}>
                                     <Form.Label>Product Category</Form.Label>
-                                    <Form.Control type="ext" value={this.state.product_category} onChange={this.handleProductCategory} placeholder="Category" disabled={this.state.disable_product_fields}/>
+                                    <Form.Control type="ext" value={this.state.product_category} onChange={this.handleProductCategory} placeholder="Category" disabled={this.state.disable_product_fields} />
                                 </Form.Group>
                             </Form.Row>
 
@@ -210,6 +217,31 @@ class ContactUsComponent extends React.Component {
                     </Card.Body>
                 </Card>
             </>);
+    }
+
+    renderSubmission() {
+        return (
+            <>
+                <CustomNavbar currentPage="products" />
+                <NotificationContainer />
+                <br />
+                <br />
+                <Alert variant="success">
+                    <Alert.Heading>Thank you for contacting us!</Alert.Heading>
+                    <p>
+                        Contact form has been submitted based on the contact details, the admin will contact you as soon as possible.
+                    </p>
+                    <hr />
+                    <div className="d-flex justify-content-end">
+                        <Link to={"/products"}>
+                            <Button variant="outline-success">
+                                View Products
+                        </Button>
+                        </Link>
+                    </div>
+                </Alert>
+            </>
+        );
     }
 }
 
