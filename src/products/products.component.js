@@ -38,7 +38,7 @@ class ProductsComponent extends React.Component {
                     <Card.Text>
                         {product.Description}
                     </Card.Text>
-                    <Link to={"/product/"+product.Id}>
+                    <Link to={"/contact/"+product.Name+"/"+"General"}>
                         <Button variant="primary" >Enquire Now</Button>
                     </Link>
                 </Card.Body>

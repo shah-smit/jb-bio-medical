@@ -6,8 +6,8 @@ import { NotificationContainer, NotificationManager } from 'react-notifications'
 import './contact.us.css'
 
 class ContactUsComponent extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleMessage = this.handleMessage.bind(this);
         this.handleProductCategory = this.handleProductCategory.bind(this);
@@ -18,15 +18,39 @@ class ContactUsComponent extends React.Component {
         this.handleUserName = this.handleUserName.bind(this);
 
         this.onChangeCaptcha = this.onChangeCaptcha.bind(this);
+        console.log(props);
+        var product_name = "";
+        console.log(props.match.params.product_name)
+        if(props.match.params.product_name){
+            product_name = props.match.params.product_name
+        }
+        
+        var product_category = "";
+        console.log(props.match.params.product_category)
+        if(props.match.params.product_category){
+            product_category = props.match.params.product_category
+        }
 
+        var foundParams = false;
+        if(product_category == ""  || product_name == ""){
+            product_category = "";
+            product_name = "";
+        } else {
+            foundParams = true;
+        }
+        
+        console.log(product_category);
+        console.log(product_name);
+        
         this.state = {
             timestamp: "",
             user_name: "",
             user_phone: "",
             user_email: "",
             message: "",
-            product_name: "",
-            product_category: ""
+            product_name: product_name,
+            product_category: product_category,
+            disable_product_fields: foundParams
         }
     }
 
@@ -150,12 +174,12 @@ class ContactUsComponent extends React.Component {
                             <Form.Row>
                                 <Form.Group as={Col}>
                                     <Form.Label>Product Name</Form.Label>
-                                    <Form.Control type="text" value={this.state.product_name} onChange={this.handleProductName} placeholder="product name" />
+                                    <Form.Control type="text" value={this.state.product_name} onChange={this.handleProductName} placeholder="product name" disabled={this.state.disable_product_fields}/>
                                 </Form.Group>
 
                                 <Form.Group as={Col}>
                                     <Form.Label>Product Category</Form.Label>
-                                    <Form.Control type="ext" value={this.state.product_category} onChange={this.handleProductCategory} placeholder="Category" />
+                                    <Form.Control type="ext" value={this.state.product_category} onChange={this.handleProductCategory} placeholder="Category" disabled={this.state.disable_product_fields}/>
                                 </Form.Group>
                             </Form.Row>
 
