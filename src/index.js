@@ -22,7 +22,7 @@ const routing = (
       <Route exact path="/contact" component={ContactUsComponent} />
       <Route exact path="/contact/:product_name/:product_category" component={ContactUsComponent} />
     </div>
-    <footer>v1.2</footer>
+    <footer>v1.3(beta)</footer>
   </HashRouter>
 )
 
