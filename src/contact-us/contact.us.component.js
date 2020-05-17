@@ -63,6 +63,8 @@ class ContactUsComponent extends React.Component {
     handleSubmit(event) {
         var obj = this.state;
         obj.timestamp = this.getCurrentDateTime();
+        obj.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
         if (this.validateFields(obj)) {
             fetch('https://sendmail-nodejs.herokuapp.com/sendmail', {
                 method: 'POST',
