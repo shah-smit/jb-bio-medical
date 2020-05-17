@@ -52,7 +52,8 @@ class ContactUsComponent extends React.Component {
             product_name: product_name,
             product_category: product_category,
             disable_product_fields: foundParams,
-            formSubmitted: false
+            formSubmitted: false,
+            processing: false
         }
     }
 
@@ -64,6 +65,7 @@ class ContactUsComponent extends React.Component {
         var obj = this.state;
         obj.timestamp = this.getCurrentDateTime();
         obj.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        this.setState({ processing: true })
 
         if (this.validateFields(obj)) {
             fetch('https://sendmail-nodejs.herokuapp.com/sendmail', {
@@ -79,14 +81,22 @@ class ContactUsComponent extends React.Component {
                     //To many requests
                     if (res.status == 429) {
                         this.sendWarningNotifs("Error in submiting contact form.", 180000)
+                        this.setState({ processing: false })
                     } else {
-                        this.setState({ formSubmitted: true })
+                        this.setState({
+                            formSubmitted: true,
+                            processing: false
+                        })
                     }
                 })
                 .catch((err) => {
                     console.log(err);
                     this.sendWarningNotifs("Something went wrong!", 3000)
+                    this.setState({ processing: false })
                 })
+        }
+        else {
+            this.setState({ processing: false })
         }
     }
 
@@ -163,7 +173,7 @@ class ContactUsComponent extends React.Component {
                 break;
             case 'error':
                 NotificationManager.error('Error message', 'Click me!', 5000, () => {
-                    alert('callback');
+                    console.log("callback")
                 });
                 break;
         }
@@ -183,37 +193,37 @@ class ContactUsComponent extends React.Component {
                             <Form.Row>
                                 <Form.Group as={Col}>
                                     <Form.Label>Product Name</Form.Label>
-                                    <Form.Control type="text" value={this.state.product_name} onChange={this.handleProductName} placeholder="product name" disabled={this.state.disable_product_fields} />
+                                    <Form.Control type="text" value={this.state.product_name} onChange={this.handleProductName} placeholder="product name" disabled={this.state.disable_product_fields || this.state.processing} />
                                 </Form.Group>
 
                                 <Form.Group as={Col}>
                                     <Form.Label>Product Category</Form.Label>
-                                    <Form.Control type="ext" value={this.state.product_category} onChange={this.handleProductCategory} placeholder="Category" disabled={this.state.disable_product_fields} />
+                                    <Form.Control type="ext" value={this.state.product_category} onChange={this.handleProductCategory} placeholder="Category" disabled={this.state.disable_product_fields || this.state.processing} />
                                 </Form.Group>
                             </Form.Row>
 
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridName">
                                     <Form.Label>Name</Form.Label>
-                                    <Form.Control type="text" value={this.state.user_name} onChange={this.handleUserName} placeholder="Enter Name" />
+                                    <Form.Control type="text" value={this.state.user_name} onChange={this.handleUserName} placeholder="Enter Name" disabled={this.state.processing}/>
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" value={this.state.user_email} onChange={this.handleUserEmail} placeholder="Enter email" />
+                                    <Form.Control type="email" value={this.state.user_email} onChange={this.handleUserEmail} placeholder="Enter email" disabled={this.state.processing}/>
                                 </Form.Group>
                                 <Form.Group as={Col}>
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type="text" value={this.state.user_phone} onChange={this.handleUserPhone} placeholder="Enter phone number" />
+                                    <Form.Control type="text" value={this.state.user_phone} onChange={this.handleUserPhone} placeholder="Enter phone number" disabled={this.state.processing}/>
                                 </Form.Group>
                             </Form.Row>
 
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows="3" value={this.state.message} onChange={this.handleMessage} />
+                                <Form.Control as="textarea" rows="3" value={this.state.message} onChange={this.handleMessage} disabled={this.state.processing}/>
                             </Form.Group>
 
-                            <Button variant="primary" type="submit" onClick={this.handleSubmit}>
-                                Submit
+                            <Button variant="primary" type="submit" onClick={this.handleSubmit} disabled={this.state.processing}>
+                                {this.state.processing ? "Processing..." : "Submit"}
                             </Button>
                         </Form>
                     </Card.Body>
