@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/jb-bio-medical/precache-manifest.3cd32d043064e2b184cdbf735c4cbcaf.js"
+  "/jb-bio-medical/precache-manifest.5d6f1cf132a352be5d14f8591ebda1b6.js"
 );
 
 self.addEventListener('message', (event) => {
