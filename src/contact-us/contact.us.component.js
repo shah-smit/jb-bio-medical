@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { NotificationContainer, NotificationManager } from 'react-notifications';
 
 import './contact.us.css'
+import maps from './maps.png'
 
 class ContactUsComponent extends React.Component {
     constructor(props) {
@@ -235,8 +236,9 @@ class ContactUsComponent extends React.Component {
                     <Card.Body>
                         <Card.Title>Company Address</Card.Title>
                         <Card.Text>
-                            A-117, Tirthraj Complex, Opp. V S Hospital,
-                            Ellisbridge, Ahmedabad-380006
+                            A-117, Tirthraj Complex, Opp. V S Hospital, <br/>
+                            Ellisbridge, Ahmedabad-380006 <br/>
+                            <img src={maps} />
                         </Card.Text>
                         <Card.Title>Contact Number</Card.Title>
                         <Card.Text>
