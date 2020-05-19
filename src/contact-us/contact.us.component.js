@@ -188,6 +188,7 @@ class ContactUsComponent extends React.Component {
                 <CustomNavbar currentPage="products" />
                 <NotificationContainer />
                 <Card>
+                    <Card.Header as="h5">Inquire</Card.Header>
                     <Card.Body>
                         <Form>
                             <Form.Row>
@@ -205,27 +206,42 @@ class ContactUsComponent extends React.Component {
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridName">
                                     <Form.Label>Name</Form.Label>
-                                    <Form.Control type="text" value={this.state.user_name} onChange={this.handleUserName} placeholder="Enter Name" disabled={this.state.processing}/>
+                                    <Form.Control type="text" value={this.state.user_name} onChange={this.handleUserName} placeholder="Enter Name" disabled={this.state.processing} />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" value={this.state.user_email} onChange={this.handleUserEmail} placeholder="Enter email" disabled={this.state.processing}/>
+                                    <Form.Control type="email" value={this.state.user_email} onChange={this.handleUserEmail} placeholder="Enter email" disabled={this.state.processing} />
                                 </Form.Group>
                                 <Form.Group as={Col}>
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type="text" value={this.state.user_phone} onChange={this.handleUserPhone} placeholder="Enter phone number" disabled={this.state.processing}/>
+                                    <Form.Control type="text" value={this.state.user_phone} onChange={this.handleUserPhone} placeholder="Enter phone number" disabled={this.state.processing} />
                                 </Form.Group>
                             </Form.Row>
 
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows="3" value={this.state.message} onChange={this.handleMessage} disabled={this.state.processing}/>
+                                <Form.Control as="textarea" rows="3" value={this.state.message} onChange={this.handleMessage} disabled={this.state.processing} />
                             </Form.Group>
 
                             <Button variant="primary" type="submit" onClick={this.handleSubmit} disabled={this.state.processing}>
                                 {this.state.processing ? "Processing..." : "Submit"}
                             </Button>
                         </Form>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Header as="h5">Contact Details</Card.Header>
+                    <Card.Body>
+                        <Card.Title>Company Address</Card.Title>
+                        <Card.Text>
+                            A-117, Tirthraj Complex, Opp. V S Hospital,
+                            Ellisbridge, Ahmedabad-380006
+                        </Card.Text>
+                        <Card.Title>Contact Number</Card.Title>
+                        <Card.Text>
+                            +91 9825065681
+                        </Card.Text>
+                        <Button variant="primary" href="whatsapp://send?phone=+919825065681">Open on Whatsapp</Button>
                     </Card.Body>
                 </Card>
             </>);
