@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/jb-bio-medical/static/css/main.b76d11eb.chunk.css",
-    "main.js": "/jb-bio-medical/static/js/main.b43d22eb.chunk.js",
-    "main.js.map": "/jb-bio-medical/static/js/main.b43d22eb.chunk.js.map",
+    "main.css": "/jb-bio-medical/static/css/main.28a35f7c.chunk.css",
+    "main.js": "/jb-bio-medical/static/js/main.d64a584a.chunk.js",
+    "main.js.map": "/jb-bio-medical/static/js/main.d64a584a.chunk.js.map",
     "runtime-main.js": "/jb-bio-medical/static/js/runtime-main.2e44508f.js",
     "runtime-main.js.map": "/jb-bio-medical/static/js/runtime-main.2e44508f.js.map",
     "static/css/2.2262eadd.chunk.css": "/jb-bio-medical/static/css/2.2262eadd.chunk.css",
-    "static/js/2.ca2ee69d.chunk.js": "/jb-bio-medical/static/js/2.ca2ee69d.chunk.js",
-    "static/js/2.ca2ee69d.chunk.js.map": "/jb-bio-medical/static/js/2.ca2ee69d.chunk.js.map",
+    "static/js/2.68b4c2cc.chunk.js": "/jb-bio-medical/static/js/2.68b4c2cc.chunk.js",
+    "static/js/2.68b4c2cc.chunk.js.map": "/jb-bio-medical/static/js/2.68b4c2cc.chunk.js.map",
     "index.html": "/jb-bio-medical/index.html",
-    "precache-manifest.b4dc2566d39f407df6fc0448da0df74d.js": "/jb-bio-medical/precache-manifest.b4dc2566d39f407df6fc0448da0df74d.js",
+    "precache-manifest.ba885b58d4d1cd97f016775792123bc7.js": "/jb-bio-medical/precache-manifest.ba885b58d4d1cd97f016775792123bc7.js",
     "service-worker.js": "/jb-bio-medical/service-worker.js",
     "static/css/2.2262eadd.chunk.css.map": "/jb-bio-medical/static/css/2.2262eadd.chunk.css.map",
-    "static/css/main.b76d11eb.chunk.css.map": "/jb-bio-medical/static/css/main.b76d11eb.chunk.css.map",
-    "static/js/2.ca2ee69d.chunk.js.LICENSE.txt": "/jb-bio-medical/static/js/2.ca2ee69d.chunk.js.LICENSE.txt",
+    "static/css/main.28a35f7c.chunk.css.map": "/jb-bio-medical/static/css/main.28a35f7c.chunk.css.map",
+    "static/js/2.68b4c2cc.chunk.js.LICENSE.txt": "/jb-bio-medical/static/js/2.68b4c2cc.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/jb-bio-medical/static/media/logo.5d5d9eef.svg",
+    "static/media/maps.png": "/jb-bio-medical/static/media/maps.6b62e891.png",
     "static/media/notifications.css": "/jb-bio-medical/static/media/notification.c0d3c94c.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.2e44508f.js",
     "static/css/2.2262eadd.chunk.css",
-    "static/js/2.ca2ee69d.chunk.js",
-    "static/css/main.b76d11eb.chunk.css",
-    "static/js/main.b43d22eb.chunk.js"
+    "static/js/2.68b4c2cc.chunk.js",
+    "static/css/main.28a35f7c.chunk.css",
+    "static/js/main.d64a584a.chunk.js"
   ]
 }
