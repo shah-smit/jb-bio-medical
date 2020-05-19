@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomNavbar from '../helper/Nav'
-import { Card, Form, Col, Button, Alert } from 'react-bootstrap';
+import { Card, Form, Col, Button, Alert,Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { NotificationContainer, NotificationManager } from 'react-notifications';
 
@@ -224,7 +224,8 @@ class ContactUsComponent extends React.Component {
                             </Form.Group>
 
                             <Button variant="primary" type="submit" onClick={this.handleSubmit} disabled={this.state.processing}>
-                                {this.state.processing ? "Processing..." : "Submit"}
+                                {this.state.processing ?
+                                    this.renderLoading() : "Submit"}
                             </Button>
                         </Form>
                     </Card.Body>
@@ -245,6 +246,21 @@ class ContactUsComponent extends React.Component {
                     </Card.Body>
                 </Card>
             </>);
+    }
+
+    renderLoading() {
+        return (
+            <>
+                <Spinner
+                    as="span"
+                    animation="grow"
+                    size="sm"
+                    role="status"
+                    aria-hidden="true"
+                />
+                Processing...
+            </>
+        );
     }
 
     renderSubmission() {
