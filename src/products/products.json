@@ -5,6 +5,7 @@
         "ImageUrl":"/images/imac120.png",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/iMac120.pdf",
+        "Category":"CAT1",
         "Description":"Product 1 Description"
     },
     {
@@ -13,6 +14,7 @@
         "ImageUrl":"/images/imac300.png",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/iMAC300.pdf",
+        "Category":"CAT2",
         "Description":"Product 2 Description"
     },
     {
@@ -21,6 +23,7 @@
         "ImageUrl":"/images/imac1200.png",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/iMAC1200.pdf",
+        "Category":"CAT1",
         "Description":"Product 3 Description"
     },
     {
@@ -29,6 +32,7 @@
         "ImageUrl":"/images/zonecareq3.png",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/ZONCAREQ3.pdf",
+        "Category":"CAT3",
         "Description":"Product 4 Description"
     }
 ]
