@@ -11,6 +11,7 @@ import ContactUsComponent from './contact-us/contact.us.component'
 import HomeComponent from './home/home.component'
 import ProductsComponent from './products/products.component'
 import ProductComponent from './products/product.component'
+import AboutUsComponent from './about-us/about.us.component';
 
 
 const routing = (
@@ -20,9 +21,9 @@ const routing = (
       <Route path="/products" component={ProductsComponent} />
       <Route path="/product/:id" component={ProductComponent} />
       <Route exact path="/contact" component={ContactUsComponent} />
+      <Route exact path="/about" component={AboutUsComponent} />
       <Route exact path="/contact/:product_name/:product_category" component={ContactUsComponent} />
     </div>
-    <footer>v1.3(beta)</footer>
   </HashRouter>
 )
 
