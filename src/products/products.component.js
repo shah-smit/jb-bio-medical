@@ -24,6 +24,7 @@ class ProductsComponent extends React.Component {
         this.products.forEach(product => {
             cards.push(this.getCard(product));
         })
+        console.log(ProductService.getProductCategories())
         return (
             <div>
                 <CustomNavbar currentPage="products" />
@@ -43,9 +44,10 @@ class ProductsComponent extends React.Component {
                         <br/>
                         {product.Description}
                     </Card.Text>
-                    <Link to={"/contact/" + product.Name + "/" + "General"}>
-                        <Button variant="primary" >Enquire Now</Button>
-                    </Link>
+                    
+                    <Link to={"/contact/" + product.Name + "/" + "General"}><Button variant="primary" >Enquire Now</Button></Link>
+                    <Button variant="outline-info" style={{ float: "right"}} href={process.env.PUBLIC_URL + product.PdfUrl}>Info</Button>
+                    
                 </Card.Body>
             </Card>
         )

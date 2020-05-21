@@ -9,7 +9,8 @@ export class ProductService{
         }
         searchValue = searchValue.toLowerCase().trim();
         let filteredProducts = products.filter(product => {
-            var concatedVal = product.Description + product.Name;
+            var concatedVal = product.Description + product.Name + product.Category;
+            console.log(concatedVal)
             concatedVal = concatedVal.toLowerCase().trim()
             return concatedVal.includes(searchValue)
         });
@@ -18,5 +19,16 @@ export class ProductService{
 
     static getProductById(id): Product{
         return products.filter(el => el.Id === id).pop();
+    }
+
+    static getProductCategories(){
+        let categories = []
+        products.forEach(product => {
+            if(categories.indexOf(product.Category) < 0){
+                categories.push(product.Category);
+            }
+        })
+
+        return categories;
     }
 }
