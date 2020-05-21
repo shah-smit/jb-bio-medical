@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/jb-bio-medical/static/css/main.28a35f7c.chunk.css",
-    "main.js": "/jb-bio-medical/static/js/main.b3787765.chunk.js",
-    "main.js.map": "/jb-bio-medical/static/js/main.b3787765.chunk.js.map",
+    "main.js": "/jb-bio-medical/static/js/main.0c9e237d.chunk.js",
+    "main.js.map": "/jb-bio-medical/static/js/main.0c9e237d.chunk.js.map",
     "runtime-main.js": "/jb-bio-medical/static/js/runtime-main.2e44508f.js",
     "runtime-main.js.map": "/jb-bio-medical/static/js/runtime-main.2e44508f.js.map",
     "static/css/2.2262eadd.chunk.css": "/jb-bio-medical/static/css/2.2262eadd.chunk.css",
-    "static/js/2.6778ef62.chunk.js": "/jb-bio-medical/static/js/2.6778ef62.chunk.js",
-    "static/js/2.6778ef62.chunk.js.map": "/jb-bio-medical/static/js/2.6778ef62.chunk.js.map",
+    "static/js/2.20389028.chunk.js": "/jb-bio-medical/static/js/2.20389028.chunk.js",
+    "static/js/2.20389028.chunk.js.map": "/jb-bio-medical/static/js/2.20389028.chunk.js.map",
     "index.html": "/jb-bio-medical/index.html",
-    "precache-manifest.83838742dac0795defd7b4b05b259b27.js": "/jb-bio-medical/precache-manifest.83838742dac0795defd7b4b05b259b27.js",
+    "precache-manifest.f0c14b041205bf52f122124678b4fe2f.js": "/jb-bio-medical/precache-manifest.f0c14b041205bf52f122124678b4fe2f.js",
     "service-worker.js": "/jb-bio-medical/service-worker.js",
     "static/css/2.2262eadd.chunk.css.map": "/jb-bio-medical/static/css/2.2262eadd.chunk.css.map",
     "static/css/main.28a35f7c.chunk.css.map": "/jb-bio-medical/static/css/main.28a35f7c.chunk.css.map",
-    "static/js/2.6778ef62.chunk.js.LICENSE.txt": "/jb-bio-medical/static/js/2.6778ef62.chunk.js.LICENSE.txt",
+    "static/js/2.20389028.chunk.js.LICENSE.txt": "/jb-bio-medical/static/js/2.20389028.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/jb-bio-medical/static/media/logo.5d5d9eef.svg",
     "static/media/maps.png": "/jb-bio-medical/static/media/maps.6b62e891.png",
     "static/media/notifications.css": "/jb-bio-medical/static/media/notification.c0d3c94c.eot"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.2e44508f.js",
     "static/css/2.2262eadd.chunk.css",
-    "static/js/2.6778ef62.chunk.js",
+    "static/js/2.20389028.chunk.js",
     "static/css/main.28a35f7c.chunk.css",
-    "static/js/main.b3787765.chunk.js"
+    "static/js/main.0c9e237d.chunk.js"
   ]
 }
