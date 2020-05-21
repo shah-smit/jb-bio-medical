@@ -19,7 +19,7 @@ class CustomNavbar extends React.Component {
   }
 
   onSearchClicked(e) {
-    this.props.history.push('/products?search='+this.state.searchField)
+    this.props.history.push('/products?search=' + this.state.searchField)
   }
 
   render() {
@@ -33,11 +33,11 @@ class CustomNavbar extends React.Component {
             <Nav.Link href="#contact">Contact Us</Nav.Link>
             <Nav.Link href="#about">About Us</Nav.Link>
           </Nav>
+          <Form inline>
+            <FormControl type="text" placeholder="Enter Product Name" value={this.state.searchField} onChange={this.onChangeSearchField} className="mr-sm-2" />
+            <Button variant="outline-success" onClick={this.onSearchClicked}>Search</Button>
+          </Form>
         </Navbar.Collapse>
-        <Form inline>
-          <FormControl type="text" placeholder="Enter Product Name" value={this.state.searchField} onChange={this.onChangeSearchField} className="mr-sm-2" />
-          <Button variant="outline-success" onClick={this.onSearchClicked}>Search</Button>
-        </Form>
       </Navbar>
     );
   }
