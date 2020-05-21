@@ -35,7 +35,7 @@ class CustomNavbar extends React.Component {
           </Nav>
         </Navbar.Collapse>
         <Form inline>
-          <FormControl type="text" placeholder="Search" value={this.state.searchField} onChange={this.onChangeSearchField} className="mr-sm-2" />
+          <FormControl type="text" placeholder="Enter Product Name" value={this.state.searchField} onChange={this.onChangeSearchField} className="mr-sm-2" />
           <Button variant="outline-success" onClick={this.onSearchClicked}>Search</Button>
         </Form>
       </Navbar>

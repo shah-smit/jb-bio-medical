@@ -11,14 +11,16 @@ import './products.css'
 class ProductsComponent extends React.Component {
     products: Product[];
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.products = [];
-        this.products = ProductService.getProducts();
     }
 
     render() {
         let cards = [];
+        const query = new URLSearchParams(this.props.location.search);
+        const token = query.get('search')
+        this.products = ProductService.getProducts(token);
         this.products.forEach(product => {
             cards.push(this.getCard(product));
         })
