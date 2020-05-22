@@ -25,7 +25,15 @@ class CustomNavbar extends React.Component {
   render() {
     return (
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">JB BIO Med</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img
+            src={process.env.PUBLIC_URL + "/images/logo.png"}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
