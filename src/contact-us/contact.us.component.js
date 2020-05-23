@@ -206,23 +206,25 @@ class ContactUsComponent extends React.Component {
 
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridName">
-                                    <Form.Label>Name</Form.Label>
+                                    <Form.Label>Name<sup>*</sup></Form.Label>
                                     <Form.Control type="text" value={this.state.user_name} onChange={this.handleUserName} placeholder="Enter Name" disabled={this.state.processing} />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridEmail">
-                                    <Form.Label>Email</Form.Label>
+                                    <Form.Label>Email<sup>*</sup></Form.Label>
                                     <Form.Control type="email" value={this.state.user_email} onChange={this.handleUserEmail} placeholder="Enter email" disabled={this.state.processing} />
                                 </Form.Group>
                                 <Form.Group as={Col}>
-                                    <Form.Label>Phone Number</Form.Label>
+                                    <Form.Label>Phone Number<sup>*</sup></Form.Label>
                                     <Form.Control type="text" value={this.state.user_phone} onChange={this.handleUserPhone} placeholder="Enter phone number" disabled={this.state.processing} />
                                 </Form.Group>
                             </Form.Row>
 
                             <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Message</Form.Label>
+                                <Form.Label>Message<sup>*</sup></Form.Label>
                                 <Form.Control as="textarea" rows="3" value={this.state.message} onChange={this.handleMessage} disabled={this.state.processing} />
                             </Form.Group>
+
+                            <p><sup>*</sup> Mandatory fields. <br/></p>
 
                             <Button variant="primary" type="submit" onClick={this.handleSubmit} disabled={this.state.processing}>
                                 {this.state.processing ?
