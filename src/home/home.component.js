@@ -12,7 +12,7 @@ class HomeComponent extends React.Component {
             <CustomNavbar currentPage="products"/>
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={process.env.PUBLIC_URL + "/images/logo.png"} className="App-logo" alt="logo" />
                     <p>
                     Welcome to JB Bio Medical Equipments Showcase!
                     </p>
