@@ -9,7 +9,7 @@ Home Page:
 ![Home Page](./product_image/homepage.png)
 
 Product Catalogue Page:
-![Products Page](./product_image/productcataloguepage.png)
+![Products Page](./product_image/Productcataloguepage.png)
 
 Default Contact Page:
 ![Default Contact Page](./product_image/defaultcontactpage.png)
