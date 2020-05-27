@@ -1,12 +1,12 @@
 [
     {
         "Id": 1,
-        "Name":"iMAC 120",
-        "ImageUrl":"/images/imac120.png",
+        "Name":"Resuable video Laryanhscope",
+        "ImageUrl":"/images/product image 1.JPG",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
-        "PdfUrl":"/pdf/iMac120.pdf",
+        "PdfUrl":"/pdf/1 Resuable video Laryanhscope.pdf",
         "Category":"CAT1",
-        "Description":"Product 1 Description"
+        "Description":"Resuable video Laryanhscope"
     },
     {
         "Id": 2,
