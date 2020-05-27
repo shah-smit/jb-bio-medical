@@ -11,12 +11,6 @@ class AboutUsComponent extends React.Component {
                 <Card>
                     <Card.Header as="h5">About Us</Card.Header>
                     <Card.Body>
-                        <img
-                            src={process.env.PUBLIC_URL + "/images/logo.png"}
-                            className="d-inline-block align-top"
-                            alt="React Bootstrap logo"
-                        />
-                        <br />
                         <Card.Text>
                             J B Biomed is a leading brand in dealing with High tech medical and Endoscopy equipemnts/ instruments, Surgical Lasers in all the major discipline.
                         </Card.Text>
