@@ -5,7 +5,7 @@
         "ImageUrl":"/images/product image 1.JPG",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/1 Resuable video Laryanhscope.pdf",
-        "Category":"CAT1",
+        "Category":"Digital",
         "Description":"Resuable video Laryanhscope"
     },
     {
@@ -14,8 +14,8 @@
         "ImageUrl":"/images/singleusedigitalflexibleureteroscope.jpeg",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/singleusedigitalflexibleureteroscope.pdf",
-        "Category":"CAT2",
-        "Description":"Renowned technology in the world of urology for  kidney/ureteric /bladder stone removal with finest digital advance picture quality"
+        "Category":"Equipment",
+        "Description":"Renowned technology in the world of urology for kidney/ureteric /bladder stone removal with finest digital advance picture quality"
     },
     {
         "Id": 3,
@@ -23,8 +23,8 @@
         "ImageUrl":"/images/imac1200.png",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/iMAC1200.pdf",
-        "Category":"CAT1",
-        "Description":"Product 3 Description"
+        "Category":"Digital",
+        "Description":"iMac 1200"
     },
     {
         "Id": 4,
@@ -32,7 +32,7 @@
         "ImageUrl":"/images/zonecareq3.png",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/ZONCAREQ3.pdf",
-        "Category":"CAT3",
-        "Description":"Product 4 Description"
+        "Category":"Digital",
+        "Description":"Zoncare"
     }
 ]

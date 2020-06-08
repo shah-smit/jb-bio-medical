@@ -37,12 +37,10 @@ class ProductsComponent extends React.Component {
             <Card style={{ width: '18rem', display: "inline-block" }}>
                 <Card.Img variant="top" src={process.env.PUBLIC_URL + product.ImageUrl} />
                 <Card.Body>
-                    <Card.Title>{product.Name}</Card.Title>
+                    <Card.Title className="producttitle">{product.Name}</Card.Title>
                     <Card.Text>
                         <Badge variant="secondary">{product.Category}</Badge>
-                        <br/>
-                        <br/>
-                        {product.Description}
+                        <p className="product-description">{product.Description}</p>
                     </Card.Text>
                     
                     <Link to={"/contact/" + product.Name + "/" + "General"}><Button variant="primary" >Enquire Now</Button></Link>
