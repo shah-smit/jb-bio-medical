@@ -10,12 +10,12 @@
     },
     {
         "Id": 2,
-        "Name":"iMac 300",
-        "ImageUrl":"/images/imac300.png",
+        "Name":"Single use digital flexible ureteroscope",
+        "ImageUrl":"/images/singleusedigitalflexibleureteroscope.jpeg",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
-        "PdfUrl":"/pdf/iMAC300.pdf",
+        "PdfUrl":"/pdf/singleusedigitalflexibleureteroscope.pdf",
         "Category":"CAT2",
-        "Description":"Product 2 Description"
+        "Description":"Renowned technology in the world of urology for  kidney/ureteric /bladder stone removal with finest digital advance picture quality"
     },
     {
         "Id": 3,
