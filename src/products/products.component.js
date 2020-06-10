@@ -40,7 +40,7 @@ class ProductsComponent extends React.Component {
                     <Card.Title className="producttitle">{product.Name}</Card.Title>
                     <Card.Text>
                         <Badge variant="secondary">{product.Category}</Badge>
-                        <p className="product-description">{product.Description}</p>
+                        {/* <p className="product-description">{product.Description}</p> */}
                     </Card.Text>
                     
                     <Link to={"/contact/" + product.Name + "/" + "General"}><Button variant="primary" >Enquire Now</Button></Link>
