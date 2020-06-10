@@ -24,7 +24,7 @@ class CustomNavbar extends React.Component {
 
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg" variant="dark" style={{backgroundColor: "#094e98"}}>
         <Navbar.Brand href="#home">
           <img
             src={process.env.PUBLIC_URL + "/images/logo.png"}
