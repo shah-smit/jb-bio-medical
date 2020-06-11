@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Product } from './product';
 import { ProductService } from './products.service'
 import CustomNavbar from '../helper/Nav'
+import CustomFooter from '../helper/Footer'
 
 import './products.css'
 
@@ -29,6 +30,7 @@ class ProductsComponent extends React.Component {
             <div>
                 <CustomNavbar currentPage="products" />
                 {cards}
+                <CustomFooter></CustomFooter>
             </div>);
     }
 

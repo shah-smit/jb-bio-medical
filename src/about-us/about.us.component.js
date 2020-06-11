@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Card, Button } from 'react-bootstrap';
 import CustomNavbar from '../helper/Nav'
+import CustomFooter from '../helper/Footer';
 
 class AboutUsComponent extends React.Component {
     render() {
@@ -26,6 +27,7 @@ class AboutUsComponent extends React.Component {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+                <CustomFooter></CustomFooter>
             </>
         );
     }
