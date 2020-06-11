@@ -3,6 +3,7 @@ import logo from '../logo.svg';
 import '../App.css';
 import { Link } from 'react-router-dom'
 import { Image,Carousel } from 'react-bootstrap'
+import CustomFooter from '../helper/Footer'
 
 import CustomNavbar from '../helper/Nav'
 
@@ -35,6 +36,7 @@ class HomeComponent extends React.Component {
                         {/* </Carousel.Item>
                     </Carousel> */}
                 </div>
+                <CustomFooter></CustomFooter>
             </>
         );
     }

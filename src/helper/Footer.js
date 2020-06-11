@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './footer.css'
+
 class CustomFooter extends React.Component {
 
   constructor(props) {

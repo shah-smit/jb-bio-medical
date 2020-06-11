@@ -6,6 +6,7 @@ import { NotificationContainer, NotificationManager } from 'react-notifications'
 
 import './contact.us.css'
 import maps from './maps.png'
+import CustomFooter from '../helper/Footer';
 
 class ContactUsComponent extends React.Component {
     constructor(props) {
@@ -249,6 +250,8 @@ class ContactUsComponent extends React.Component {
                         <Button variant="primary" href="whatsapp://send?phone=+919825065681">Open on Whatsapp</Button>
                     </Card.Body>
                 </Card>
+                <br/>
+                <CustomFooter></CustomFooter>
             </>);
     }
 
