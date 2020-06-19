@@ -19,12 +19,12 @@
     },
     {
         "Id": 3,
-        "Name":"iMac 1200",
-        "ImageUrl":"/images/imac1200.png",
+        "Name":"K Nine",
+        "ImageUrl":"/images/knine.jpg",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
-        "PdfUrl":"/pdf/iMAC1200.pdf",
+        "PdfUrl":"/pdf/knine.pdf",
         "Category":"Digital",
-        "Description":"iMac 1200"
+        "Description":"K Nine"
     },
     {
         "Id": 4,
