@@ -20,7 +20,7 @@
     {
         "Id": 3,
         "Name":"K Nine",
-        "ImageUrl":"/images/knine.jpg",
+        "ImageUrl":"/images/knine.JPG",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
         "PdfUrl":"/pdf/knine.pdf",
         "Category":"Digital",
