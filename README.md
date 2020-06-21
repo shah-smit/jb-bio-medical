@@ -8,6 +8,9 @@ A content based application, made using ReactJS.
 Home Page:
 ![Home Page](./product_image/homepage.png)
 
+About Page:
+![About Page](./product_image/aboutuspage.png)
+
 Product Catalogue Page:
 ![Products Page](./product_image/Productcataloguepage.png)
 
