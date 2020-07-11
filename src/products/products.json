@@ -28,11 +28,11 @@
     },
     {
         "Id": 4,
-        "Name":"Zoncare",
-        "ImageUrl":"/images/zonecareq3.png",
+        "Name":"Multipara Patient Monitor Basic and Advance",
+        "ImageUrl":"/images/ZONCARE/1.JPG",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
-        "PdfUrl":"/pdf/ZONCAREQ3.pdf",
-        "Category":"Digital",
-        "Description":"Zoncare"
+        "PdfUrl":"/pdf/ZONCARE/1 Zonecare Multipara Patient Monitor Basic and Advance.pdf",
+        "Category":"ZONCARE",
+        "Description":"K Nine"
     }
 ]
