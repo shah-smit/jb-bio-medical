@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jb-bio-medical/static/css/main.4aecd2cb.chunk.css",
-    "main.js": "/jb-bio-medical/static/js/main.e34a06e1.chunk.js",
-    "main.js.map": "/jb-bio-medical/static/js/main.e34a06e1.chunk.js.map",
+    "main.js": "/jb-bio-medical/static/js/main.660e98ff.chunk.js",
+    "main.js.map": "/jb-bio-medical/static/js/main.660e98ff.chunk.js.map",
     "runtime-main.js": "/jb-bio-medical/static/js/runtime-main.2e44508f.js",
     "runtime-main.js.map": "/jb-bio-medical/static/js/runtime-main.2e44508f.js.map",
     "static/css/2.2262eadd.chunk.css": "/jb-bio-medical/static/css/2.2262eadd.chunk.css",
     "static/js/2.2a96eb83.chunk.js": "/jb-bio-medical/static/js/2.2a96eb83.chunk.js",
     "static/js/2.2a96eb83.chunk.js.map": "/jb-bio-medical/static/js/2.2a96eb83.chunk.js.map",
     "index.html": "/jb-bio-medical/index.html",
-    "precache-manifest.372fdb0b0c10055c6da24de90b944400.js": "/jb-bio-medical/precache-manifest.372fdb0b0c10055c6da24de90b944400.js",
+    "precache-manifest.1e95a9c7d30a51d6118df89d13540950.js": "/jb-bio-medical/precache-manifest.1e95a9c7d30a51d6118df89d13540950.js",
     "service-worker.js": "/jb-bio-medical/service-worker.js",
     "static/css/2.2262eadd.chunk.css.map": "/jb-bio-medical/static/css/2.2262eadd.chunk.css.map",
     "static/css/main.4aecd2cb.chunk.css.map": "/jb-bio-medical/static/css/main.4aecd2cb.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.2262eadd.chunk.css",
     "static/js/2.2a96eb83.chunk.js",
     "static/css/main.4aecd2cb.chunk.css",
-    "static/js/main.e34a06e1.chunk.js"
+    "static/js/main.660e98ff.chunk.js"
   ]
 }
