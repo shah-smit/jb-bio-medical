@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button,Badge } from 'react-bootstrap';
+import { Card, Button,Badge,CardColumns } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
 import { Product } from './product';
@@ -29,14 +29,16 @@ class ProductsComponent extends React.Component {
         return (
             <div>
                 <CustomNavbar currentPage="products" />
-                {cards}
+                <CardColumns>
+                    {cards}
+                </CardColumns>
                 <CustomFooter></CustomFooter>
             </div>);
     }
 
     getCard(product) {
         return (
-            <Card style={{ width: '18rem', display: "inline-block" }}>
+            <Card>
                 <Card.Img variant="top" src={process.env.PUBLIC_URL + product.ImageUrl} />
                 <Card.Body>
                     <Card.Title className="producttitle">{product.Name}</Card.Title>
