@@ -39,7 +39,7 @@ class ProductsComponent extends React.Component {
     getCard(product) {
         return (
             <Card>
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + product.ImageUrl} />
+                <Card.Img className="card-img" variant="top" src={process.env.PUBLIC_URL + product.ImageUrl} />
                 <Card.Body>
                     <Card.Title className="producttitle">{product.Name}</Card.Title>
                     <Card.Text>

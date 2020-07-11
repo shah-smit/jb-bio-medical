@@ -24,6 +24,11 @@
     height: 6vh;
 }
 
+.card-img {
+    display:block;
+    margin:auto;
+}
+
 @media (max-width: 800px) {
     .card{
         margin-right: 0px;
