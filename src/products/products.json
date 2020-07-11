@@ -1,15 +1,24 @@
 [
     {
         "Id": 1,
-        "Name":"Resuable video Laryanhscope",
-        "ImageUrl":"/images/product image 1.JPG",
+        "Name":"Disposable video laryngoscope",
+        "ImageUrl":"/images/Basedata/2.jpeg",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
-        "PdfUrl":"/pdf/1 Resuable video Laryanhscope.pdf",
-        "Category":"Digital",
+        "PdfUrl":"/pdf/Basedata/2.pdf",
+        "Category":"Basedata",
         "Description":"Resuable video Laryanhscope"
     },
     {
         "Id": 2,
+        "Name":"Resuable video Laryanhscope",
+        "ImageUrl":"/images/product image 1.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/1 Resuable video Laryanhscope.pdf",
+        "Category":"Basedata",
+        "Description":"Resuable video Laryanhscope"
+    },
+    {
+        "Id": 3,
         "Name":"Single use digital flexible ureteroscope",
         "ImageUrl":"/images/singleusedigitalflexibleureteroscope.jpeg",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
@@ -18,7 +27,7 @@
         "Description":"Renowned technology in the world of urology for kidney/ureteric /bladder stone removal with finest digital advance picture quality"
     },
     {
-        "Id": 3,
+        "Id": 4,
         "Name":"K Nine",
         "ImageUrl":"/images/knine.JPG",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
@@ -27,12 +36,102 @@
         "Description":"K Nine"
     },
     {
-        "Id": 4,
-        "Name":"Zoncare",
-        "ImageUrl":"/images/zonecareq3.png",
+        "Id": 5,
+        "Name":"Multipara Patient Monitor Basic and Advance",
+        "ImageUrl":"/images/ZONCARE/1.JPG",
         "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
-        "PdfUrl":"/pdf/ZONCAREQ3.pdf",
-        "Category":"Digital",
-        "Description":"Zoncare"
+        "PdfUrl":"/pdf/ZONCARE/1 Zonecare Multipara Patient Monitor Basic and Advance.pdf",
+        "Category":"ZONCARE",
+        "Description":"K Nine"
+    },
+    {
+        "Id": 6,
+        "Name":"Digital 12 -CH ECG Machine",
+        "ImageUrl":"/images/ZONCARE/2.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/ZONCARE/2.pdf",
+        "Category":"ZONCARE",
+        "Description":"K Nine"
+    },
+    {
+        "Id": 7,
+        "Name":"Full Digital Colour doppler ultrasonic diangnostic system",
+        "ImageUrl":"/images/ZONCARE/3.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/ZONCARE/3.pdf",
+        "Category":"ZONCARE",
+        "Description":"K Nine"
+    },
+    {
+        "Id": 8,
+        "Name":"3-CH ECG Machine",
+        "ImageUrl":"/images/ZONCARE/4.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/ZONCARE/4.pdf",
+        "Category":"ZONCARE",
+        "Description":"K Nine"
+    },
+    {
+        "Id": 9,
+        "Name":"LIGHTED INTUBATION STYLET",
+        "ImageUrl":"/images/Basedata/3.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/Basedata/3.pdf",
+        "Category":"Basedata",
+        "Description":"LIGHTED INTUBATION STYLET"
+    },
+    {
+        "Id": 8,
+        "Name":"Video lighted intubation",
+        "ImageUrl":"/images/Basedata/4.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/Basedata/4.pdf",
+        "Category":"Basedata",
+        "Description":"LIGHTED INTUBATION STYLET"
+    },
+    {
+        "Id": 10,
+        "Name":"Illumination Retractor",
+        "ImageUrl":"/images/Basedata/5.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/Basedata/5.pdf",
+        "Category":"Basedata",
+        "Description":"Illumination Retractor"
+    },
+    {
+        "Id": 11,
+        "Name":"Flexible Video Uereterorenoscope",
+        "ImageUrl":"/images/MDH/2.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/MDH/2.pdf",
+        "Category":"MDH",
+        "Description":"Illumination Retractor"
+    },
+    {
+        "Id": 12,
+        "Name":"Single use video Laryngoscope",
+        "ImageUrl":"/images/MDH/3.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/MDH/3.pdf",
+        "Category":"MDH",
+        "Description":"Illumination Retractor"
+    },
+    {
+        "Id": 13,
+        "Name":"All speciality sterilsation tray",
+        "ImageUrl":"/images/ENDOSYS/1.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/ENDOSYS/1.pdf",
+        "Category":"ENDOSYS",
+        "Description":"Illumination Retractor"
+    },
+    {
+        "Id": 13,
+        "Name":"Hybrid Aluminium Trays",
+        "ImageUrl":"/images/ENDOSYS/2.JPG",
+        "Images":["/images/imac120.png","/images/imac120.png","/images/imac120.png"],
+        "PdfUrl":"/pdf/ENDOSYS/2.pdf",
+        "Category":"ENDOSYS",
+        "Description":"Illumination Retractor"
     }
 ]
