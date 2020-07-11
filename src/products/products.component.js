@@ -32,6 +32,8 @@ class ProductsComponent extends React.Component {
                 <CardColumns>
                     {cards}
                 </CardColumns>
+                <br/>
+                <br/>
                 <CustomFooter></CustomFooter>
             </div>);
     }
