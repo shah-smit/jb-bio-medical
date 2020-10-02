@@ -1,6 +1,6 @@
 # JB BIO Med
 
-A content based application, made using ReactJS.
+A content based application, made using ReactJS. for JB Bio Medical Ahmedabad.
 
 
 ## Services or Pages designed:
